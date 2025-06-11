@@ -74,7 +74,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="relative flex min-h-screen flex-col">
           <Header />
-          <main className="flex-1 my-6 overflow-y-auto no-scrollbar">{children}</main>
+          <main className="flex-1 overflow-y-auto no-scrollbar py-6">{children}</main>
           <Footer />
         </div>
         <script

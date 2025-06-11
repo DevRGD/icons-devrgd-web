@@ -3,12 +3,12 @@ import { siteConfig } from '@/config/site';
 export default function Footer() {
   return (
     <footer>
-      <div className="container flex flex-col items-center justify-between gap-4 py-5 md:flex-row">
+      <div className="flex flex-row items-center justify-center gap-4 py-2">
         <p className="text-balance text-center text-sm leading-loose text-muted-foreground md:text-left">
           &copy; {new Date().getFullYear()} {siteConfig.name}. All Rights Reserved.
         </p>
         <p className="text-balance text-center text-sm leading-loose text-muted-foreground md:text-right">
-          Built by{' '}
+          by{' '}
           <a
             href={siteConfig.links.twitter}
             target="_blank"

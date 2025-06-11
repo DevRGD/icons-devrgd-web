@@ -1,14 +1,26 @@
 import { GitHub, Terminal, Alphabet, Layer, Home, User, Settings } from '@/icons';
+import { type Metadata } from 'next';
+import { siteConfig } from '@/config/site';
+
+export const metadata: Metadata = {
+  title: `Home`,
+  description: siteConfig.description,
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center gap-16 bg-slate-100 p-8 md:p-16">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold tracking-tight text-slate-900">Universal Content System</h1>
-        <p className="mt-3 text-lg text-slate-600">A flexible, type-safe system for icons and text.</p>
-      </div>
+    <main className="flex min-h-screen w-full flex-col items-center gap-16 bg-slate-100 text-slate-900 p-8 md:p-16">
+      <section className="text-center mb-16">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-5xl font-bold tracking-tight text-slate-700">{siteConfig.name}</h1>
+          <p className="mt-4 text-lg text-slate-500 text-justify">{siteConfig.description}</p>
+        </div>
+      </section>
 
-      {/* --- Section 1: Showcase Grid --- */}
+      {/* --- Section 1: Showcase Grid (Restored Original Styles) --- */}
       <div className="grid w-full max-w-5xl grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
         {/* User Avatar Example */}
         <div className="flex flex-col items-center justify-center gap-3 rounded-2xl bg-white p-6 shadow-sm transition-all hover:shadow-lg">

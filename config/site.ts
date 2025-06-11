@@ -8,6 +8,6 @@ export const siteConfig = {
   ogImage: 'https://icons-devrgd.vercel.app/og-image.png',
   links: {
     twitter: 'https://twitter.com/DevRGD',
-    github: 'https://github.com/DevRGD/icons',
+    github: 'https://github.com/DevRGD/icons-devrgd',
   },
 };
